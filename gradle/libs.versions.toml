@@ -1,0 +1,20 @@
+[versions]
+kotlin-gradle-plugin = "1.9.21"
+kotlinx-coroutines = "1.7.3"
+kotest = "5.8.0"
+arrow-kt = "1.2.1"
+kotlinter = "4.1.0"
+
+[libraries]
+kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin-gradle-plugin" }
+kotlinx-coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
+arrow-kt-core = { module = "io.arrow-kt:arrow-core", version.ref = "arrow-kt" }
+arrow-kt-coroutines = { module = "io.arrow-kt:arrow-fx-coroutines", version.ref = "arrow-kt" }
+arrow-kt-stm = { module = "io.arrow-kt:arrow-fx-stm", version.ref = "arrow-kt" }
+arrow-kt-optics = { module = "io.arrow-kt:arrow-optics", version.ref = "arrow-kt" }
+kotest-core = { module = "io.kotest:kotest-assertions-core", version.ref = "kotest" }
+kotest-runner = { module = "io.kotest:kotest-runner-junit5", version.ref = "kotest" }
+kotest-property = { module = "io.kotest:kotest-property", version.ref = "kotest" }
+
+[plugins]
+kotlinter = { id = "org.jmailen.kotlinter", version.ref = "kotlinter"}
