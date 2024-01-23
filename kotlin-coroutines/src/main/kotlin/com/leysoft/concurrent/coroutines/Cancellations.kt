@@ -48,7 +48,8 @@ object Cancellations {
                 delay(200)
                 this.opened = false
             } else {
-                throw InvalidOperationException("The door is closed") // this exception cancel a job
+                throw InvalidOperationException("The door is closed")
+                // It will not be propagated to its parent. It will only cause cancellation of the current coroutine
             }
     }
 
