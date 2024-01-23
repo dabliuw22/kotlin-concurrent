@@ -55,6 +55,25 @@ object ExceptionHandling {
             }
             delay(3000)
         }
-}
 
-suspend fun main(): Unit = ExceptionHandling.nonBlockingExceptionWithSupervisorScope()
+    fun nonBlockingExceptionWithSupervisorScopeAndExceptionHandler(): Unit =
+        runBlocking {
+            val exceptionHandler =
+                CoroutineExceptionHandler { _, error ->
+                    println("Catch: ${error.message ?: ""}")
+                }
+            val scope = CoroutineScope(SupervisorJob() + exceptionHandler)
+
+            scope.launch {
+                delay(1000)
+                throw Error("Boom...")
+            }
+
+            scope.launch {
+                delay(2000)
+                println("Will not be printed")
+            }
+
+            delay(3000)
+        }
+}
