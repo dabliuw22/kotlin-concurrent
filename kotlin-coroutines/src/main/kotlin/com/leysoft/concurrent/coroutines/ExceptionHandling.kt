@@ -9,6 +9,7 @@ object ExceptionHandling {
     fun nonBlockingException(): Unit =
         runBlocking {
             val job = SupervisorJob() // never use withContext(SupervisorJob())
+            // launch and async: Exceptions are propagated to the parent through Job.
             launch(job) {
                 delay(1000)
                 throw Error("Boom...")
