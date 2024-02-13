@@ -11,6 +11,9 @@ typealias Score = Float
 
 typealias Amount = BigDecimal
 
+/**
+ * # 2
+ **/
 object BasicStructuredConcurrency {
     /**
      * How do you can use this function?

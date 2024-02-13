@@ -2,6 +2,9 @@ package com.leysoft.concurrent.coroutines
 
 import kotlinx.coroutines.*
 
+/**
+ * # 4
+ **/
 object Cancellations {
     /**
      * When the cancel() method is called:

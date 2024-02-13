@@ -3,6 +3,7 @@ package com.leysoft.concurrent.coroutines
 import kotlinx.coroutines.*
 
 /**
+ * # 5
  * The scope creates relationships between coroutines inside it
  * and allows us to manage the lifecycles of these coroutines
  */

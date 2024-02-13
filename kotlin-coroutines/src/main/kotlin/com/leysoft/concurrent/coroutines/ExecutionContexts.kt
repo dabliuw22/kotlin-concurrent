@@ -6,6 +6,7 @@ import kotlinx.coroutines.supervisorScope
 import kotlinx.coroutines.withContext
 
 /**
+ * # 7
  * Dispatchers.Default: Is used to run CPU-intensive operations.
  * It is the default dispatcher if you don't set a dispatcher.
  * The numbers of threads = core threads.

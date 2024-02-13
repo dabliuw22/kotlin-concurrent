@@ -2,6 +2,9 @@ package com.leysoft.concurrent.coroutines
 
 import kotlinx.coroutines.*
 
+/**
+ * # 6
+ */
 object ExceptionHandling {
     /**
      * We can use a SupervisorJob as parent
