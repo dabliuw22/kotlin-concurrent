@@ -12,6 +12,7 @@ arrow-kt-core = { module = "io.arrow-kt:arrow-core", version.ref = "arrow-kt" }
 arrow-kt-coroutines = { module = "io.arrow-kt:arrow-fx-coroutines", version.ref = "arrow-kt" }
 arrow-kt-stm = { module = "io.arrow-kt:arrow-fx-stm", version.ref = "arrow-kt" }
 arrow-kt-optics = { module = "io.arrow-kt:arrow-optics", version.ref = "arrow-kt" }
+kotlinx-coroutines-test = {  module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinx-coroutines" }
 kotest-core = { module = "io.kotest:kotest-assertions-core", version.ref = "kotest" }
 kotest-runner = { module = "io.kotest:kotest-runner-junit5", version.ref = "kotest" }
 kotest-property = { module = "io.kotest:kotest-property", version.ref = "kotest" }
