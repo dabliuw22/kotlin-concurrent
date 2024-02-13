@@ -1,4 +1,3 @@
 package com.leysoft.concurrent.coroutines
 
-object Channels {
-}
+object Channels
