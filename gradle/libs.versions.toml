@@ -1,9 +1,10 @@
 [versions]
-kotlin-gradle-plugin = "1.9.21"
+kotlin-gradle-plugin = "1.9.23"
 kotlinx-coroutines = "1.7.3"
 kotest = "5.8.0"
-arrow-kt = "1.2.1"
+arrow-kt = "1.2.4"
 kotlinter = "4.1.0"
+ksp = "1.9.23-1.0.20"
 
 [libraries]
 kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin-gradle-plugin" }
@@ -12,10 +13,12 @@ arrow-kt-core = { module = "io.arrow-kt:arrow-core", version.ref = "arrow-kt" }
 arrow-kt-coroutines = { module = "io.arrow-kt:arrow-fx-coroutines", version.ref = "arrow-kt" }
 arrow-kt-stm = { module = "io.arrow-kt:arrow-fx-stm", version.ref = "arrow-kt" }
 arrow-kt-optics = { module = "io.arrow-kt:arrow-optics", version.ref = "arrow-kt" }
+arrow-kt-optics-ksp-plugin = { module = "io.arrow-kt:arrow-optics-ksp-plugin", version.ref = "arrow-kt" }
 kotlinx-coroutines-test = {  module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinx-coroutines" }
 kotest-core = { module = "io.kotest:kotest-assertions-core", version.ref = "kotest" }
 kotest-runner = { module = "io.kotest:kotest-runner-junit5", version.ref = "kotest" }
 kotest-property = { module = "io.kotest:kotest-property", version.ref = "kotest" }
 
 [plugins]
-kotlinter = { id = "org.jmailen.kotlinter", version.ref = "kotlinter"}
+kotlinter = { id = "org.jmailen.kotlinter", version.ref = "kotlinter" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
