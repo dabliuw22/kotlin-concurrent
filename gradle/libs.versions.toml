@@ -5,6 +5,7 @@ kotest = "5.8.0"
 arrow-kt = "1.2.4"
 kotlinter = "4.1.0"
 ksp = "1.9.23-1.0.20"
+arrow-integrations-jackson-serialization= "0.14.1"
 
 [libraries]
 kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin-gradle-plugin" }
@@ -14,6 +15,8 @@ arrow-kt-coroutines = { module = "io.arrow-kt:arrow-fx-coroutines", version.ref 
 arrow-kt-stm = { module = "io.arrow-kt:arrow-fx-stm", version.ref = "arrow-kt" }
 arrow-kt-optics = { module = "io.arrow-kt:arrow-optics", version.ref = "arrow-kt" }
 arrow-kt-optics-ksp-plugin = { module = "io.arrow-kt:arrow-optics-ksp-plugin", version.ref = "arrow-kt" }
+arrow-kt-core-serialization = { module = "io.arrow-kt:arrow-core-serialization" , version.ref = "arrow-kt" }
+arrow-integrations-jackson-serialization = { module = "io.arrow-kt:arrow-integrations-jackson" , version.ref = "arrow-integrations-jackson-serialization" }
 kotlinx-coroutines-test = {  module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinx-coroutines" }
 kotest-core = { module = "io.kotest:kotest-assertions-core", version.ref = "kotest" }
 kotest-runner = { module = "io.kotest:kotest-runner-junit5", version.ref = "kotest" }
